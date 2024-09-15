@@ -4,7 +4,7 @@ This is a personal CV project built with React, designed to showcase my skills, 
 
 ## Project Overview
 
-- **Name:** My React CV
+- **Name:** My MERN CV
 - **Technologies:** React.js, CSS, JavaScript, Node, Express.js
 - **Hosted on:** [GitHub Pages](https://cotneo.github.io/my-react-cv)
 
