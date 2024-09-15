@@ -1,4 +1,4 @@
-# My React CV
+# My MERN CV
 
 This is a personal CV project built with React, designed to showcase my skills, projects, and experience. The project is hosted on GitHub Pages and fully responsive.
 
