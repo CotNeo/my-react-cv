@@ -1,0 +1,358 @@
+/* Genel Stil */
+body {
+    display: flex;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f9;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.section {
+    padding: 50px;
+    text-align: center;
+    flex: 1;
+}
+
+h1, h2 {
+    color: #0066FF;
+    transition: color 0.3s ease-in-out;
+}
+
+p {
+    font-size: 16px;
+    color: #333;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 20%;
+    background-color: #1e1e1e;
+    color: white;
+    height: 100vh;
+    padding: 30px;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    box-shadow: 4px 0 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sidebar h2 {
+    font-size: 26px;
+    font-weight: bold;
+    color: #00FFAB;
+    margin-bottom: 40px;
+    letter-spacing: 1.5px;
+}
+
+.sidebar nav a {
+    display: block;
+    color: #FFF;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 15px 10px;
+    margin-bottom: 12px;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+}
+
+.sidebar nav a:hover {
+    background-color: #00FFAB;
+    color: #1e1e1e;
+    transform: translateX(10px);
+}
+
+.menu-divider {
+    border: none;
+    height: 1px;
+    background-color: #333;
+    margin: 0 0 12px 0;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.social-links a {
+    color: white;
+    font-size: 24px;
+    margin: 0 10px;
+    transition: color 0.3s ease-in-out;
+}
+
+.social-links a:hover {
+    color: #00FFAB;
+}
+
+/* Main Content */
+.content {
+    margin-left: 15%;
+    width: 85%;
+    padding: 40px;
+    background-color: #F4F4F9;
+    flex: 1;
+}
+
+.about-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.about-image img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border: 4px solid #00FFAB;
+    border-radius: 50%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-image img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.about-content h2 {
+    font-size: 32px;
+    color: #0066FF;
+}
+
+.about-content p {
+    font-size: 18px;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Skills Section */
+.skills-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.skill {
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.skill img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.skill p {
+    font-size: 18px;
+    color: #333;
+}
+
+.skill:hover {
+    transform: scale(1.1);
+}
+
+/* Projects Section */
+.projects-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+}
+
+.project {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 800px;
+    text-align: left;
+    transition: all 0.3s ease-in-out;
+}
+
+.project h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    transition: color 0.3s ease-in-out;
+}
+
+.project p {
+    font-size: 16px;
+    color: #333;
+}
+
+.project a {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #0066FF;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+.project:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.project a:hover {
+    color: #00FFAB;
+    text-decoration: underline;
+}
+
+/* Contact Section */
+.contact-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+}
+
+#contact-form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 800px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    transition: border-color 0.3s ease-in-out;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #00FFAB;
+}
+
+button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #0066FF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button[type="submit"]:hover {
+    background-color: #004db3;
+}
+
+/* Blog Section */
+.blog-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+}
+
+.blog-post {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 800px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.blog-post h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    transition: color 0.3s ease-in-out;
+}
+
+.blog-post p {
+    font-size: 16px;
+    color: #333;
+}
+
+.blog-post a {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #0066FF;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+.blog-post:hover {
+    transform: translateY(-5px);
+}
+
+.blog-post a:hover {
+    color: #00FFAB;
+    text-decoration: underline;
+}
+
+/* Footer */
+.footer {
+    width: 100%;
+    background-color: #1e1e1e;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    margin-left: 15%;
+    width: 85%;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 14px;
+    color: #bbb;
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+        text-align: center;
+        box-shadow: none;
+    }
+
+    .content {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .footer {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .about-container, .skills-container, .projects-container, .contact-container, .blog-container {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+.timedate{
+    color: white;
+}
+#saat{
+    border-style: solid;
+    margin: 20px;
+    padding: 20px;
+}
